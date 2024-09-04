@@ -1,5 +1,6 @@
 {
   globals.mapleader = " ";
+  clipboard.register = "unnamedplus";
   opts = {
     cursorline = true;
     expandtab = true;
