@@ -13,5 +13,6 @@
     nvim-autopairs.enable = true;
     rust-tools.enable = true;
     typescript-tools.enable = true;
+    web-devicons.enable = true;
   };
 }
