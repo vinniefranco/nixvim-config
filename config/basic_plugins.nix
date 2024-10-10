@@ -11,7 +11,9 @@
     lualine.enable = true;
     luasnip.enable = true;
     nvim-autopairs.enable = true;
-    rust-tools.enable = true;
+    rustaceanvim.enable = true;
+    sandwich.enable = true;
+    trouble.enable = true;
     typescript-tools.enable = true;
     web-devicons.enable = true;
   };
