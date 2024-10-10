@@ -23,7 +23,7 @@ in
 
   plugins = {
     cmp = {
-      enable = false;
+      enable = true;
       autoEnableSources = true;
       settings = {
         snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
