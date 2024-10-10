@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 {
   plugins = {
     crates-nvim = {
@@ -11,11 +11,13 @@
     rustaceanvim = {
       enable = true;
       settings = {
-          server.default_settings.files.excludeDirs = [".direnv"];
-          dap.autoloadConfigurations = true;
-          dap.adapter = let
+        server.default_settings.files.excludeDirs = [ ".direnv" ];
+        dap.autoloadConfigurations = true;
+        dap.adapter =
+          let
             code-lldb = pkgs.vscode-extensions.vadimcn.vscode-lldb;
-          in {
+          in
+          {
             executable.command = "${code-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
             executable.args = [
               "--liblldb"
@@ -27,7 +29,7 @@
             port = "31337";
             host = "127.0.0.1";
           };
-        };
+      };
     };
   };
 }

@@ -7,7 +7,6 @@
     flash.enable = true;
     friendly-snippets.enable = true;
     gitsigns.enable = true;
-    lspkind.enable = true;
     lualine.enable = true;
     luasnip.enable = true;
     nvim-autopairs.enable = true;

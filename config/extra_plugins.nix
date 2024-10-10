@@ -9,16 +9,16 @@ let
       hash = "sha256-pTAvkJPmT3eD3XWrYl6nyKSzeRFEHOi8iDCamF1D1Cg=";
     };
   };
-  blink-cmp = pkgs.vimUtils.buildVimPlugin {
-    name = "blink-cmp";
-    src = pkgs.fetchFromGitHub {
-      owner = "Saghen";
-      repo = "blink.cmp";
-      rev = "8632278fc56be58c1fe9efea00585dd2edd3e317";
-      hash = "sha256-8yqGxh8kL5f7G9s5u+5Z2c2x0xZbWkT/5KZL6wOw6k=";
-    };
-  };
 in
+# blink-cmp = pkgs.vimUtils.buildVimPlugin {
+#   name = "blink-cmp";
+#   src = pkgs.fetchFromGitHub {
+#     owner = "Saghen";
+#     repo = "blink.cmp";
+#     rev = "8632278fc56be58c1fe9efea00585dd2edd3e317";
+#     hash = "sha256-8yqGxh8kL5f7G9s5u+5Z2c2x0xZbWkT/5KZL6wOw6k=";
+#   };
+# };
 {
   extraPlugins = [
     {
