@@ -89,65 +89,6 @@ in
             priority = 300;
           }
         ];
-        formatting.fields = [
-          "abbr"
-          "kind"
-          "menu"
-        ];
-        formatting.format =
-          # lua
-          ''
-            function(_, vim_item)
-              local icons = {
-                Namespace = "󰌗",
-                Text = "󰉿",
-                Method = "󰆧",
-                Function = "󰆧",
-                Constructor = "",
-                Field = "󰜢",
-                Variable = "󰀫",
-                Class = "󰠱",
-                Interface = "",
-                Module = "",
-                Property = "󰜢",
-                Unit = "󰑭",
-                Value = "󰎠",
-                Enum = "",
-                Keyword = "󰌋",
-                Snippet = "",
-                Color = "󰏘",
-                File = "󰈚",
-                Reference = "󰈇",
-                Folder = "󰉋",
-                EnumMember = "",
-                Constant = "󰏿",
-                Struct = "󰙅",
-                Event = "",
-                Operator = "󰆕",
-                TypeParameter = "󰊄",
-                Table = "",
-                Object = "󰅩",
-                Tag = "",
-                Array = "󰅪",
-                Boolean = "",
-                Number = "",
-                Null = "󰟢",
-                String = "󰉿",
-                Calendar = "",
-                Watch = "󰥔",
-                Package = "",
-                Copilot = "",
-                Codeium = "",
-                TabNine = "",
-              }
-              vim_item.kind = string.format("%s %s", icons[vim_item.kind], vim_item.kind)
-              return vim_item
-            end
-          '';
-        window = {
-          completion.__raw = ''cmp.config.window.bordered()'';
-          documentation.__raw = ''cmp.config.window.bordered()'';
-        };
       };
     };
   };
