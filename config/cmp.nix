@@ -19,17 +19,79 @@
         sources = [
           { name = "codeium"; }
           { name = "path"; }
+          { name = "nvim_lsp_signature_help"; }
           { name = "nvim_lsp"; }
+          { name = "nvim_lsp_document_symbol"; }
+          { name = "dap"; }
+          { name = "treesitter"; }
           { name = "luasnip"; }
           { name = "buffer"; }
         ];
+        formatting.fields = ["abbr" "kind" "menu"];
+        formatting.format =
+          # lua
+          ''
+            function(_, vim_item)
+              local icons = {
+                Namespace = "󰌗",
+                Text = "󰉿",
+                Method = "󰆧",
+                Function = "󰆧",
+                Constructor = "",
+                Field = "󰜢",
+                Variable = "󰀫",
+                Class = "󰠱",
+                Interface = "",
+                Module = "",
+                Property = "󰜢",
+                Unit = "󰑭",
+                Value = "󰎠",
+                Enum = "",
+                Keyword = "󰌋",
+                Snippet = "",
+                Color = "󰏘",
+                File = "󰈚",
+                Reference = "󰈇",
+                Folder = "󰉋",
+                EnumMember = "",
+                Constant = "󰏿",
+                Struct = "󰙅",
+                Event = "",
+                Operator = "󰆕",
+                TypeParameter = "󰊄",
+                Table = "",
+                Object = "󰅩",
+                Tag = "",
+                Array = "󰅪",
+                Boolean = "",
+                Number = "",
+                Null = "󰟢",
+                String = "󰉿",
+                Calendar = "",
+                Watch = "󰥔",
+                Package = "",
+                Copilot = "",
+                Codeium = "",
+                TabNine = "",
+              }
+              vim_item.kind = string.format("%s %s", icons[vim_item.kind], vim_item.kind)
+              return vim_item
+            end
+          '';
       };
     };
     cmp-buffer.enable = true;
-    cmp-nvim-lsp.enable = true;
+    cmp-clippy.enable = true;
+    cmp-cmdline-history.enable = true;
+    cmp-cmdline.enable = true;
+    cmp-dap.enable = true;
+    cmp-emoji.enable = true;
+    cmp-nvim-lsp-document-symbol.enable = true;
     cmp-nvim-lsp-signature-help.enable = true;
+    cmp-nvim-lsp.enable = true;
+    cmp-path.enable = true;
     cmp-spell.enable = true;
     cmp-treesitter.enable = true;
-    cmp-clippy.enable = true;
+    cmp_luasnip.enable = true;
   };
 }

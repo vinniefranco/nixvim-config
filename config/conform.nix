@@ -12,7 +12,6 @@
           lspFallback = true;
           timeoutMs = 2000;
         };
-
       };
     };
   };

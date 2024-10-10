@@ -10,6 +10,7 @@
     ./lsp.nix
     ./oil.nix
     ./opts.nix
+    ./rust.nix
     ./telescope.nix
     ./treesitter.nix
   ];
