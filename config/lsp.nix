@@ -42,6 +42,7 @@
         taplo.enable = true;
         tailwindcss.enable = true;
         terraformls.enable = true;
+        slint_lsp.enable = true;
         lexical = {
           enable = true;
           filetypes = [
