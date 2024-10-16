@@ -9,6 +9,7 @@
     ./keymaps.nix
     ./lightbulb.nix
     ./lsp.nix
+    ./noice.nix
     ./oil.nix
     ./opts.nix
     ./rust.nix
