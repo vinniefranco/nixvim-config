@@ -2,6 +2,7 @@
   imports = [
     ./avante.nix
     ./basic_plugins.nix
+    ./bufferline.nix
     ./cmp.nix
     ./colorscheme.nix
     ./conform.nix
