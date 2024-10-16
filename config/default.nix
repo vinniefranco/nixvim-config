@@ -1,5 +1,6 @@
 {
   imports = [
+    ./avante.nix
     ./basic_plugins.nix
     ./cmp.nix
     ./colorscheme.nix
