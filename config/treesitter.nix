@@ -6,7 +6,6 @@
       nixvimInjections = true;
       settings = {
         ident.enable = true;
-        highlight.enable = true;
       };
     };
     treesitter-context = {
