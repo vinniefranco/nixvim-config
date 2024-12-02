@@ -39,7 +39,7 @@
           "x x x x x _ _ _ x x x x x"
           "_ _ _ x x x _ x x x _ _ _"
         ];
-        name = "LAYOUT_crosses";
+        name = "LAYOUT_default";
         timeout = 5000;
         variant = "qmk";
       };
