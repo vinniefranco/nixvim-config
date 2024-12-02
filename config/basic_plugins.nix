@@ -11,6 +11,39 @@
     lualine.enable = true;
     luasnip.enable = true;
     nvim-autopairs.enable = true;
+    qmk = {
+      enable = true;
+      settings = {
+        auto_format_pattern = "*keymap.c";
+        comment_preview = {
+          keymap_overrides = { };
+          position = "top";
+          symbols = {
+            bl = "└";
+            bm = "┴";
+            br = "┘";
+            horz = "─";
+            ml = "├";
+            mm = "┼";
+            mr = "┤";
+            space = " ";
+            tl = "┌";
+            tm = "┬";
+            tr = "┐";
+            vert = "│";
+          };
+        };
+        layout = [
+          "x x x x x _ _ _ x x x x x"
+          "x x x x x _ _ _ x x x x x"
+          "x x x x x _ _ _ x x x x x"
+          "_ _ _ x x x _ x x x _ _ _"
+        ];
+        name = "LAYOUT_crosses";
+        timeout = 5000;
+        variant = "qmk";
+      };
+    };
     sandwich.enable = true;
     trouble.enable = true;
     typescript-tools.enable = true;
