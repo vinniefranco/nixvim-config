@@ -44,7 +44,7 @@
           __inherited_from = "openai";
           api_key_name = "";
           endpoint = "http://greymatter.local:11434/v1";
-          model = "qwen2.5-coder";
+          model = "qwen2.5-coder:14b";
           max_tokens = 4096;
           temperature = 0;
         };
