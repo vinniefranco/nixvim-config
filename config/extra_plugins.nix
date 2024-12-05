@@ -31,17 +31,8 @@ in
         EOF
       '';
     }
-    {
-      plugin = pkgs.vimPlugins.vim-test;
-      config = ''
-        lua << EOF
-        vim.g["test#strategy"] = "vimux"
-        EOF
-      '';
-    }
     # { plugin = blink-cmp; }
     { plugin = oil-gitstatus; }
-    { plugin = pkgs.vimPlugins.vimux; }
     { plugin = pkgs.vimPlugins.vim-dadbod; }
     { plugin = pkgs.vimPlugins.vim-dadbod-ui; }
     { plugin = pkgs.vimPlugins.vim-dadbod-completion; }

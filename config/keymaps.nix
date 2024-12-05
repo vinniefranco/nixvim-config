@@ -1,12 +1,12 @@
 {
   keymaps = [
     {
-      action = ":TestFile<CR>";
+      action = "<CMD>lua require('neotest').run.run(vim.fn.expand('%'))<CR>";
       key = "<leader>tt";
       mode = [ "n" ];
     }
     {
-      action = ":TestNearest<CR>";
+      action = "<CMD>lua require('neotest').run.run()<CR>";
       key = "<leader>ts";
       mode = [ "n" ];
     }
@@ -62,31 +62,31 @@
       options.desc = "Navigate Down";
     }
     {
-      action = "<cmd>lua require('telescope.builtin').find_files({hidden = true})<CR>";
+      action = "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>";
       key = "<leader>ff";
       mode = "n";
       options.desc = "Find Files";
     }
     {
-      action = "<cmd>lua require('telescope.builtin').live_grep({hidden = true})<CR>";
+      action = "<CMD>lua require('telescope.builtin').live_grep({hidden = true})<CR>";
       key = "<leader>fg";
       mode = "n";
       options.desc = "Grep Files";
     }
     {
-      action = "<cmd>lua require('telescope.builtin').buffers()<CR>";
+      action = "<CMD>lua require('telescope.builtin').buffers()<CR>";
       key = "<leader>fb";
       mode = "n";
       options.desc = "Find Buffer";
     }
     {
-      action = "<cmd>lua require('telescope.builtin').diagnostics()<CR>";
+      action = "<CMD>lua require('telescope.builtin').diagnostics()<CR>";
       key = "<leader>fd";
       mode = "n";
       options.desc = "Find Diagnostics";
     }
     {
-      action = "<cmd>lua require('telescope.builtin').treesitter()<CR>";
+      action = "<CMD>lua require('telescope.builtin').treesitter()<CR>";
       key = "<leader>ft";
       mode = "n";
       options.desc = "Find Treesitter";

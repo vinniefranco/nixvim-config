@@ -10,6 +10,7 @@
     ./keymaps.nix
     ./lightbulb.nix
     ./lsp.nix
+    ./neotest.nix
     ./noice.nix
     ./oil.nix
     ./opts.nix
