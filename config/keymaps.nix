@@ -11,6 +11,11 @@
       mode = [ "n" ];
     }
     {
+      action = "<CMD>lua require('neotest').output_panel.toggle()<CR>";
+      key = "<leader>to";
+      mode = [ "n" ];
+    }
+    {
       action.__raw = "function() require'flash'.jump() end";
       key = "s";
       mode = [
