@@ -1,1 +1,1 @@
-{ colorschemes.tokyonight.enable = true; }
+{ colorschemes.onedark.enable = true; }
