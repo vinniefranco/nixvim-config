@@ -2,6 +2,7 @@
   plugins = {
     codeium-nvim.enable = true;
     comment.enable = true;
+    dressing.enable = true;
     direnv.enable = true;
     emmet.enable = true;
     flash.enable = true;
@@ -10,6 +11,8 @@
     indent-blankline.enable = true;
     lualine.enable = true;
     luasnip.enable = true;
+    notify.enable = true;
+    nui.enable = true;
     nvim-autopairs.enable = true;
     qmk = {
       enable = true;

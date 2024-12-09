@@ -2,11 +2,10 @@
   plugins = {
     treesitter = {
       enable = true;
-      nixGrammars = true;
-      nixvimInjections = true;
-      settings = {
-        ident.enable = true;
-        highlight.enable = true;
+      settings.hightlight = {
+        enable = true;
+        disable = [ "regex" ];
+        ident = true;
       };
     };
     treesitter-context = {
