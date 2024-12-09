@@ -4,7 +4,6 @@
       enable = true;
       settings.hightlight = {
         enable = true;
-        disable = [ "regex" ];
         ident = true;
       };
     };
