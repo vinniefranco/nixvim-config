@@ -1,9 +1,24 @@
+{ pkgs, ... }:
 {
   plugins = {
     treesitter = {
       enable = true;
-      settings.hightlight = {
-        enable = true;
+      nixvimInjections = true;
+      grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+        bash
+        json
+        elixir
+        markdown
+        nix
+        regex
+        lua
+        toml
+        vim
+        vimdoc
+        yaml
+      ];
+      settings = {
+        highlight.enable = true;
         ident = true;
       };
     };

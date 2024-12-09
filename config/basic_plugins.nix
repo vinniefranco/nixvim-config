@@ -11,7 +11,10 @@
     indent-blankline.enable = true;
     lualine.enable = true;
     luasnip.enable = true;
-    notify.enable = true;
+    notify = {
+      enable = true;
+      backgroundColour = "#000000";
+    };
     nui.enable = true;
     nvim-autopairs.enable = true;
     qmk = {
