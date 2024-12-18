@@ -88,8 +88,13 @@ in
             name = "path";
             priority = 300;
           }
+          {
+            name = "calc";
+            priority = 300;
+          }
         ];
       };
     };
+    cmp-calc.enable = true;
   };
 }
