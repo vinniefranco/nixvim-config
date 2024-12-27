@@ -11,10 +11,10 @@
     ./lightbulb.nix
     ./lsp.nix
     ./neotest.nix
-    ./noice.nix
     ./oil.nix
     ./opts.nix
     ./rust.nix
+    ./snacks.nix
     ./telescope.nix
     ./treesitter.nix
   ];

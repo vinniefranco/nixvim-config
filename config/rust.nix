@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
   plugins = {
-    crates-nvim = {
+    crates = {
       enable = true;
-      extraOptions = {
+      settings = {
         completion.cmp.enabled = false;
       };
     };

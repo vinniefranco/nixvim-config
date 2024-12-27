@@ -19,7 +19,7 @@
       ];
       settings = {
         highlight.enable = true;
-        ident = true;
+        ident.enable = true;
       };
     };
     treesitter-context = {
