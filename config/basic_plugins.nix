@@ -10,6 +10,7 @@
     friendly-snippets.enable = true;
     gitsigns.enable = true;
     indent-blankline.enable = true;
+    lint.enable = true;
     lualine.enable = true;
     luasnip.enable = true;
     notify = {
