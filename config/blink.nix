@@ -6,6 +6,22 @@
         keymap = {
           preset = "enter";
         };
+        completion = {
+          accept = {
+            auto_brackets = {
+              enabled = true;
+            };
+          };
+          documentation = {
+            auto_show = true;
+            auto_show_delay_ms = 200;
+          };
+          menu = {
+            draw = {
+              treesitter = [ "lsp" ];
+            };
+          };
+        };
         sources = {
           compat = [ ];
           default = [
