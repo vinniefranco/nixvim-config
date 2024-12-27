@@ -23,7 +23,7 @@ in
 
   plugins = {
     cmp = {
-      enable = true;
+      enable = false;
       autoEnableSources = true;
       settings = {
         snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
@@ -95,6 +95,6 @@ in
         ];
       };
     };
-    cmp-calc.enable = true;
+    cmp-calc.enable = false;
   };
 }

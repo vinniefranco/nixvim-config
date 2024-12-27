@@ -64,7 +64,7 @@
       enable = true;
 
       cmp = {
-        enable = true;
+        enable = false;
 
         menu = {
           buffer = "";

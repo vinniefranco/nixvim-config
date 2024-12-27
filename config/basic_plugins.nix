@@ -1,6 +1,7 @@
 {
   plugins = {
-    codeium-nvim.enable = true;
+    # https://github.com/Exafunction/codeium.nvim/pull/264
+    codeium-nvim.enable = false;
     comment.enable = true;
     dressing.enable = true;
     direnv.enable = true;

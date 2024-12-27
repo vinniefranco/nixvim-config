@@ -10,15 +10,6 @@ let
     };
   };
 in
-# blink-cmp = pkgs.vimUtils.buildVimPlugin {
-#   name = "blink-cmp";
-#   src = pkgs.fetchFromGitHub {
-#     owner = "Saghen";
-#     repo = "blink.cmp";
-#     rev = "8632278fc56be58c1fe9efea00585dd2edd3e317";
-#     hash = "sha256-8yqGxh8kL5f7G9s5u+5Z2c2x0xZbWkT/5KZL6wOw6k=";
-#   };
-# };
 {
   extraPlugins = [
     {
@@ -31,7 +22,6 @@ in
         EOF
       '';
     }
-    # { plugin = blink-cmp; }
     { plugin = oil-gitstatus; }
     { plugin = pkgs.vimPlugins.vim-dadbod; }
     { plugin = pkgs.vimPlugins.vim-dadbod-ui; }

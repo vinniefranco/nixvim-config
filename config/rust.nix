@@ -4,7 +4,7 @@
     crates-nvim = {
       enable = true;
       extraOptions = {
-        completion.cmp.enabled = true;
+        completion.cmp.enabled = false;
       };
     };
 
