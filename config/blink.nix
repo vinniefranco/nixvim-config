@@ -19,6 +19,7 @@
         };
         sources = {
           default = [
+            "codium"
             "lsp"
             "path"
             "snippets"
