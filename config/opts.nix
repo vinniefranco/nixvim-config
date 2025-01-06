@@ -25,7 +25,7 @@
   };
 
   extraConfigLuaPost = ''
-    require('oil-git-status').setup({ show_ignored = true })
+    -- require('oil-git-status').setup({ show_ignored = true })
      -- gray
      -- transparent bg
     vim.api.nvim_set_hl(0, 'Normal', { guibg=NONE, ctermbg=NONE })

@@ -16,38 +16,28 @@
             auto_show = true;
             auto_show_delay_ms = 200;
           };
-          menu = {
-            draw = {
-              treesitter = [ "lsp" ];
-            };
-          };
         };
         sources = {
-          compat = [ ];
           default = [
             "lsp"
             "path"
             "snippets"
             "buffer"
           ];
-          cmdline = [ ];
-        };
-        trigger = {
-          signature_help = {
-            enabled = true;
+          providers = {
+            codium = {
+              name = "codium";
+              module = "blink.compat.source";
+            };
           };
         };
+      };
+    };
 
-        opts_extend = [
-          "sources.completion.enabled_providers"
-          "sources.compat"
-          "sources.default"
-        ];
-        windows = {
-          documentation = {
-            auto_show = true;
-          };
-        };
+    blink-compat = {
+      enable = true;
+      settings = {
+        impersonate_nvim_cmp = true;
       };
     };
   };

@@ -43,6 +43,7 @@
         tailwindcss.enable = true;
         terraformls.enable = true;
         slint_lsp.enable = true;
+        jsonls.enable = true;
         lexical = {
           enable = true;
           filetypes = [

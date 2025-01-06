@@ -5,7 +5,7 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "refractalize";
       repo = "oil-git-status.nvim";
-      rev = "839a1a287f5eb3ce1b07b50323032398e63f7ffa";
+      rev = "a7ea816bac0cc3b8b4c3605e2f2b87960be60a05";
       hash = "sha256-pTAvkJPmT3eD3XWrYl6nyKSzeRFEHOi8iDCamF1D1Cg=";
     };
   };
@@ -22,7 +22,7 @@ in
         EOF
       '';
     }
-    { plugin = oil-gitstatus; }
+    # { plugin = oil-gitstatus; }
     { plugin = pkgs.vimPlugins.vim-dadbod; }
     { plugin = pkgs.vimPlugins.vim-dadbod-ui; }
     { plugin = pkgs.vimPlugins.vim-dadbod-completion; }
