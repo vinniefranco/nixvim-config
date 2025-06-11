@@ -2,13 +2,10 @@
 
 {
   plugins = {
-    dap = {
-      enable = true;
-      extensions = {
-        dap-virtual-text.enable = true;
-        dap-ui.enable = true;
-      };
-    };
+    dap.enable = true;
+    dap-ui.enable = true;
+    dap-virtual-text.enable = true;
+
     lsp = {
       enable = true;
       preConfig = ''
@@ -51,11 +48,6 @@
             "eelixir"
             "heex"
           ];
-          rootDir = ''
-            function(fname)
-                          local lspconfig = require('lspconfig')
-                          return lspconfig.util.root_pattern("mix.exs", ".git")(fname) or vim.loop.os_homedir()
-                        end'';
           cmd = [ "${pkgs.lexical}/bin/lexical" ];
         };
       };

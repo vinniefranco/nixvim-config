@@ -1,7 +1,5 @@
 {
   plugins = {
-    # https://github.com/Exafunction/codeium.nvim/pull/264
-    codeium-nvim.enable = true;
     comment.enable = true;
     dressing.enable = true;
     direnv.enable = true;
@@ -52,5 +50,7 @@
     trouble.enable = true;
     typescript-tools.enable = true;
     web-devicons.enable = true;
+    # https://github.com/Exafunction/codeium.nvim/pull/264
+    windsurf-nvim.enable = true;
   };
 }
