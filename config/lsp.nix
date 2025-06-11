@@ -36,6 +36,7 @@
         eslint.enable = true;
         lua_ls.enable = true;
         nixd.enable = true;
+        qmlls.enable = true;
         taplo.enable = true;
         tailwindcss.enable = true;
         terraformls.enable = true;
