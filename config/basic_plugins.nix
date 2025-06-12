@@ -49,6 +49,9 @@
     sandwich.enable = true;
     trouble.enable = true;
     typescript-tools.enable = true;
+    vim-dadbod.enable = true;
+    vim-dadbod-completion.enable = true;
+    vim-dadbod-ui.enable = true;
     web-devicons.enable = true;
     # https://github.com/Exafunction/codeium.nvim/pull/264
     windsurf-nvim.enable = true;
