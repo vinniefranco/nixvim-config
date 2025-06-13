@@ -10,6 +10,7 @@
           lsp_format = "fallback";
         };
         formatters_by_ft = {
+          elixir = [ "mix" ];
           javascript = [ "prettier" ];
           "_" = [
             "squeeze_blanks"
