@@ -1,6 +1,12 @@
 { pkgs, ... }:
 
 {
+  extraConfigLua = ''
+    require'lspconfig'.html.setup{
+      filetypes = { "html", "heex" }
+    }
+  '';
+
   plugins = {
     dap.enable = true;
     dap-ui.enable = true;
