@@ -38,15 +38,16 @@
           apply_cursor = "a";
         };
       };
-      provider = "ollama";
-      vendors = {
-        ollama = {
-          __inherited_from = "openai";
-          api_key_name = "";
-          endpoint = "http://greymatter.local:11434/v1";
-          model = "qwen2.5-coder:14b";
-          max_tokens = 4096;
-          temperature = 0;
+      provider = "claude";
+      providers = {
+        claude = {
+          endpoint = "https://api.anthropic.com";
+          model = "claude-sonnet-4-20250514";
+          timeout = 30000;
+            extra_request_body = {
+              temperature = 0.75;
+              max_tokens = 20480;
+            };
         };
       };
       windows = {
