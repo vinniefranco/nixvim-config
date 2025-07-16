@@ -38,16 +38,13 @@
           apply_cursor = "a";
         };
       };
-      provider = "claude";
+      provider = "openrouter";
       providers = {
-        claude = {
-          endpoint = "https://api.anthropic.com";
-          model = "claude-sonnet-4-20250514";
-          timeout = 30000;
-            extra_request_body = {
-              temperature = 0.75;
-              max_tokens = 20480;
-            };
+        openrouter = {
+          __inherited_from = "openai";
+          endpoint = "https://openrouter.ai/api/v1";
+          api_key_name = "OPENROUTER_API_KEY";
+          model = "moonshotai/kimi-k2:free";
         };
       };
       windows = {
