@@ -50,6 +50,7 @@
         tailwindcss.enable = true;
         taplo.enable = true;
         terraformls.enable = true;
+        ts_ls.enable = true;
         lexical = {
           enable = true;
           filetypes = [
