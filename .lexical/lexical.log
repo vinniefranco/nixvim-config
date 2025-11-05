@@ -1,0 +1,27 @@
+15:44:09.366 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+15:44:09.366 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+15:44:09.366 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+15:44:09.366 [info] Application logger started at :nonode@nohost
+15:44:15.598 [info] Failed to write to standard error (:epipe)
+15:44:15.620 [error] Process #PID<0.95.0> raised an exception
+** (ArgumentError) errors were found at the given arguments:
+
+  * 1st argument: the device does not exist
+
+    (stdlib 7.1) io.erl:202: :io.put_chars(:standard_error, ["** (ArgumentError) errors were found at the given arguments:\n\n  * 1st argument: broken pipe (epipe)\n", 10, "    (stdlib 7.1) io.erl:207: :io.put_chars(:standard_error, [[[], \"FATAL: Lexical is not compatible with Erlang/OTP 28.1.1\\n\\nLexical is compatible with the following versions of Erlang/OTP:\\n\\n  >= 24.3.4\\n  >= 25.0.0\\n  >= 26.0.2\\n  >= 27.0.0\\n\"], 10])\n    lib/lexical/server/boot.ex:145: LXical.Server.Boot.halt/1\n    lib/lexical/server/boot.ex:34: LXical.Server.Boot.start/0\n    /nix/store/rwprcillmm59s9qs47rqx6x8fq6i37qf-lexical-0.7.3/libexec/boot.exs:23: (file)\n"])
+    (elixir 1.18.4) lib/kernel/cli.ex:151: anonymous fn/3 in Kernel.CLI.exec_fun/2
