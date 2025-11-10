@@ -14,6 +14,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    expert-ls.url = "github:elixir-lang/expert";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
@@ -38,6 +39,7 @@
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
               # inherit (inputs) foo;
+              expert-ls-pkg = inputs.expert-ls.packages.${system}.default;
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;

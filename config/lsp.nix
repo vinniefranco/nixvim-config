@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, expert-ls-pkg, ... }:
 
 {
   extraConfigLua = ''
@@ -40,6 +40,10 @@
         clangd.enable = true;
         cssls.enable = true;
         eslint.enable = true;
+        expert = {
+          enable = true;
+          package = expert-ls-pkg;
+        };
         jsonls.enable = true;
         lua_ls.enable = true;
         nixd.enable = true;
@@ -51,15 +55,6 @@
         taplo.enable = true;
         terraformls.enable = true;
         ts_ls.enable = true;
-        lexical = {
-          enable = true;
-          filetypes = [
-            "elixir"
-            "eelixir"
-            "heex"
-          ];
-          cmd = [ "${pkgs.lexical}/bin/lexical" ];
-        };
       };
     };
 
