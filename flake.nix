@@ -36,9 +36,7 @@
           nixvimModule = {
             inherit pkgs;
             module = import ./config; # import the module directly
-            # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
-              # inherit (inputs) foo;
               expert-ls-pkg = inputs.expert-ls.packages.${system}.default;
             };
           };
@@ -46,7 +44,6 @@
         in
         {
           checks = {
-            # Run `nix flake check .` to verify that your config is not broken
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };
 
