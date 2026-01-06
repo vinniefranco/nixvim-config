@@ -50,7 +50,6 @@
         nushell.enable = true;
         qmlls.enable = true;
         slint_lsp.enable = true;
-        sourcekit.enable = true;
         tailwindcss.enable = true;
         taplo.enable = true;
         terraformls.enable = true;
