@@ -28,6 +28,7 @@
             port = "31337";
             host = "127.0.0.1";
           };
+        tools.enable_clippy = true;
         server = {
           default_settings = {
             rust-analyzer = {

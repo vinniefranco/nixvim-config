@@ -1,5 +1,6 @@
 {
   plugins = {
+    bacon.enable = true;
     colorizer.enable = true;
     comment.enable = true;
     direnv.enable = true;
