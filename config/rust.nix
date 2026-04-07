@@ -4,7 +4,7 @@
     crates = {
       enable = true;
       settings = {
-        completion.cmp.enabled = false;
+        completion.crates.enabled = true;
       };
     };
 

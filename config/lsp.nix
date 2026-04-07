@@ -2,9 +2,9 @@
 
 {
   extraConfigLua = ''
-    require'lspconfig'.html.setup{
+    vim.lsp.config('html', {
       filetypes = { "html", "heex" }
-    }
+    })
   '';
 
   plugins = {
