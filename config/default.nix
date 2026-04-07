@@ -5,7 +5,6 @@
     ./blink.nix
     ./bufferline.nix
     ./colorscheme.nix
-    ./conform.nix
     ./extra_plugins.nix
     ./keymaps.nix
     ./lightbulb.nix
