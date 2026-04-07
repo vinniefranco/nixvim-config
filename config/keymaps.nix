@@ -96,5 +96,10 @@
       mode = "n";
       options.desc = "Find Treesitter";
     }
+    {
+      action = "<CMD>lua vim.lsp.buf.format()<CR>";
+      key = "<leader>m";
+      options.desc = "LSP Format";
+    }
   ];
 }
