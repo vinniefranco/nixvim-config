@@ -1,6 +1,5 @@
 {
   imports = [
-    ./avante.nix
     ./basic_plugins.nix
     ./blink.nix
     ./bufferline.nix

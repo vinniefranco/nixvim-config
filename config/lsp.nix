@@ -12,21 +12,13 @@
     dap-ui.enable = true;
     dap-virtual-text.enable = true;
 
+    lsp-format = {
+      enable = true;
+    };
+
     lsp = {
       enable = true;
-      preConfig = ''
-        local lsp_symbol = function(name, icon)
-        vim.fn.sign_define(
-          "DiagnosticSign" .. name,
-          { text = icon, numhl = "Diagnostic" .. name, texthl = "Diagnostic" .. name }
-        )
-        end
-
-        lsp_symbol("Error", "󰅙")
-        lsp_symbol("Info", "")
-        lsp_symbol("Hint", "󰌵")
-        lsp_symbol("Warn", "")
-      '';
+      inlayHints = true;
       keymaps.lspBuf = {
         K = "hover";
         gD = "references";

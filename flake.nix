@@ -13,7 +13,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
-    nixvim.inputs.nixpkgs.follows = "nixpkgs";
     expert-ls.url = "github:elixir-lang/expert";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
@@ -31,11 +30,11 @@
       perSystem =
         { system, ... }:
         let
+          nixvimLib = nixvim.lib.${system};
           pkgs = import inputs.nixpkgs {
             inherit system;
             config.allowUnfree = true;
           };
-          nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
             inherit pkgs;

@@ -4,7 +4,6 @@
     colorizer.enable = true;
     comment.enable = true;
     direnv.enable = true;
-    dressing.enable = true;
     emmet.enable = true;
     flash.enable = true;
     friendly-snippets.enable = true;
@@ -16,7 +15,6 @@
     nui.enable = true;
     nvim-autopairs.enable = true;
     sandwich.enable = true;
-    trouble.enable = true;
     typescript-tools.enable = true;
     vim-dadbod-completion.enable = true;
     vim-dadbod-ui.enable = true;
