@@ -19,7 +19,9 @@ in
         packadd! vimplugin-tiny-cmdline
         lua << EOF
           vim.o.cmdheight = 0
-          require('tiny-cmdline').setup()
+          require('tiny-cmdline').setup({
+            border = "single",
+          })
         EOF
       '';
     }
