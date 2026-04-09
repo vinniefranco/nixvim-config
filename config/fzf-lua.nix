@@ -21,6 +21,9 @@
           backdrop = 60;
           height = 0.5;
         };
+        keymap.fzf = {
+          "ctrl-q" = "select-all+accept";
+        };
       };
 
       keymaps = {
