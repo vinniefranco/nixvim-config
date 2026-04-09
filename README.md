@@ -1,6 +1,6 @@
 # nixvim-config
 
-A declarative Neovim configuration built with [NixVim](https://github.com/nix-community/nixvim) and Nix Flakes. Designed for Rust and web development with integrated testing, debugging, and AI-assisted coding.
+A declarative Neovim configuration built with [NixVim](https://github.com/nix-community/nixvim) and Nix Flakes. Designed for Elixir, Rust, and web development with integrated testing, debugging, and AI-assisted coding.
 
 ## Overview
 
