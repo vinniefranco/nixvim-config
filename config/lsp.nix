@@ -12,10 +12,6 @@
     dap-ui.enable = true;
     dap-virtual-text.enable = true;
 
-    lsp-format = {
-      enable = true;
-    };
-
     lsp = {
       enable = true;
       inlayHints = true;
@@ -54,7 +50,7 @@
       cmp = {
         enable = false;
       };
-      settings= {
+      settings = {
         cmp = {
           menu = {
             buffer = "";

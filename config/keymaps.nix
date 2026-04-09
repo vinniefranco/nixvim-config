@@ -67,36 +67,6 @@
       options.desc = "Navigate Down";
     }
     {
-      action = "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>";
-      key = "<leader>ff";
-      mode = "n";
-      options.desc = "Find Files";
-    }
-    {
-      action = "<CMD>lua require('telescope.builtin').live_grep({hidden = true})<CR>";
-      key = "<leader>fg";
-      mode = "n";
-      options.desc = "Grep Files";
-    }
-    {
-      action = "<CMD>lua require('telescope.builtin').buffers()<CR>";
-      key = "<leader>fb";
-      mode = "n";
-      options.desc = "Find Buffer";
-    }
-    {
-      action = "<CMD>lua require('telescope.builtin').diagnostics()<CR>";
-      key = "<leader>fd";
-      mode = "n";
-      options.desc = "Find Diagnostics";
-    }
-    {
-      action = "<CMD>lua require('telescope.builtin').treesitter()<CR>";
-      key = "<leader>ft";
-      mode = "n";
-      options.desc = "Find Treesitter";
-    }
-    {
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
       key = "<leader>m";
       options.desc = "LSP Format";
