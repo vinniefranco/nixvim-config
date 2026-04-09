@@ -11,6 +11,7 @@
     lint.enable = true;
     lualine.enable = true;
     luasnip.enable = true;
+    mini-cmdline.enable = true;
     mini-notify.enable = true;
     mini-icons.enable = true;
     nvim-autopairs.enable = true;

@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   globals.mapleader = " ";
   clipboard.register = "unnamedplus";
@@ -28,10 +29,5 @@
     winborder = "single";
   };
 
-  extraConfigLuaPost = " 
-     -- transparent bg
-    vim.api.nvim_set_hl(0, 'Normal', { guibg=NONE, ctermbg=NONE })
-    -- Spelling is good
-    vim.api.nvim_set_hl(0, 'SpellBad', { undercurl=true })
-  ";
+  extraConfigLuaPost = builtins.readFile ./lua/extraConfigLuaPost.lua;
 }

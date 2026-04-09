@@ -1,1 +1,6 @@
-{ colorschemes.onedark.enable = true; }
+{
+  colorschemes.onedark = {
+    enable = true;
+    settings.transparent = true;
+  };
+}
