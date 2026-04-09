@@ -1,6 +1,5 @@
 {
   plugins = {
-    bacon.enable = true;
     colorizer.enable = true;
     comment.enable = true;
     direnv.enable = true;
@@ -12,7 +11,8 @@
     lint.enable = true;
     lualine.enable = true;
     luasnip.enable = true;
-    nui.enable = true;
+    mini-notify.enable = true;
+    mini-icons.enable = true;
     nvim-autopairs.enable = true;
     sandwich.enable = true;
     typescript-tools.enable = true;
